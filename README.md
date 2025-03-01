@@ -1,4 +1,4 @@
-# Retrieval-Augmented Generation (RAG) Project
+# Retrieval-Augmented Generation (RAG) Agent Project
 
 ## Overview
 This project implements a Retrieval-Augmented Generation (RAG) system that enhances generative AI models with information retrieval capabilities. It allows users to upload documents, query the system, and receive responses based on both stored knowledge and real-time retrieval.
