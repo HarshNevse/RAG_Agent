@@ -30,7 +30,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system that enhan
 ## 📂 Project Structure
 ```
 📁 project-root
- ├── 📂 templates       # Contains HTML, CSS, and JavaScript files
+ ├── 📂 templates       # Contains index.html
  ├── 📄 app.py            # core python code wrapped in flask.
  ├── 📄 requirements.txt  # Dependencies
  ├── 📄 README.md      # Project Documentation
