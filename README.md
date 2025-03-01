@@ -52,11 +52,14 @@ This project implements a Retrieval-Augmented Generation (RAG) system that enhan
    ```bash
    pip install -r requirements.txt
    ```
-4. Run the backend server:
+4. Set your HuggingFace API key:
+    ```bash
+   set HF_API_KEY=hf_your_api_key_here
+   ```
+5. Run the backend server:
    ```bash
    python app.py  # Flask example
    ```
-5. Open `index.html` in your browser to access the frontend.
 
 ## Usage
 - **Upload Files**: Click on the upload section to add documents.
