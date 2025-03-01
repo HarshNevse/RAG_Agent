@@ -1,0 +1,3 @@
+haystack-ai
+sentence-transformers
+flask
