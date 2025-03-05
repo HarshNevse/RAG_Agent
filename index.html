@@ -842,7 +842,7 @@
             .then(response => response.json())
             .then(data => {
                 // Update the assistant message
-                assistantMsg.textContent = data.response;
+                assistantMsg.innerHTML = data.response.replace(/\n/g, "<br>");
                 chatContainer.scrollTop = chatContainer.scrollHeight;
             })
             .catch(error => {
