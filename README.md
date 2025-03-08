@@ -22,10 +22,10 @@ This project implements a Retrieval-Augmented Generation (RAG) system that enhan
 
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python (Flask/FastAPI/Django)
-- **Database**: PostgreSQL / JSONPowerDB / SQLite (based on requirement)
-- **AI Model**: OpenAI GPT / Llama / Custom Transformer Models
-- **Vector Search**: FAISS / Pinecone / Weaviate
+- **Backend**: Python (Flask)
+- **Database**: InMemory
+- **AI Model**: Mistral Instruct 7b v0.3 via HuggingFace
+- **Vector Search**: sentence-transformers/all-MiniLM-L6-v2
 
 ## 📂 Project Structure
 ```
