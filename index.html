@@ -749,18 +749,34 @@
                 body: formData
             })
             .then(response => response.json())
-            .then(data => {
-                button.innerHTML = '<i class="fas fa-check"></i> Files Uploaded!';
-                setTimeout(() => {
-                    button.innerHTML = '<i class="fas fa-upload"></i> Upload Files';
-                    button.disabled = false;
-                }, 2000);
                 
-                // Reset file input
-                document.getElementById("fileInput").value = '';
-                document.querySelector('.file-input-label').innerHTML = `<i class="fas fa-cloud-upload-alt"></i><span>Choose files or drag & drop</span>`;
-                document.getElementById('fileList').innerHTML = '';
-            })
+            .then(data => {
+    if (data.error) {
+        alert(`Upload failed: ${data.error}`);
+        button.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Upload Failed';
+    } else {
+        let message = "Files uploaded successfully!";
+
+        if (data.failed_files && Object.keys(data.failed_files).length > 0) {
+            message += `\nSome files were rejected:\n${Object.keys(data.failed_files).join(", ")}`;
+        }
+
+        alert(message);  // Show processed and failed files
+
+        button.innerHTML = '<i class="fas fa-check"></i> Files Uploaded!';
+    }
+
+    setTimeout(() => {
+        button.innerHTML = '<i class="fas fa-upload"></i> Upload Files';
+        button.disabled = false;
+    }, 2000);
+
+    // Reset file input
+    document.getElementById("fileInput").value = '';
+    document.querySelector('.file-input-label').innerHTML = `<i class="fas fa-cloud-upload-alt"></i><span>Choose files or drag & drop</span>`;
+    document.getElementById('fileList').innerHTML = '';
+})
+
             .catch(error => {
                 button.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Upload Failed';
                 setTimeout(() => {
