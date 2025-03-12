@@ -25,6 +25,7 @@ text_embedder = SentenceTransformersTextEmbedder(
 text_embedder.warm_up()
 
 
+
 # pre-processing pipeline
 from haystack.components.writers import DocumentWriter
 from haystack.components.converters import MarkdownToDocument, PyPDFToDocument, TextFileToDocument
