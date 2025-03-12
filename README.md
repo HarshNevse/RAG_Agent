@@ -69,6 +69,9 @@ This project implements a Retrieval-Augmented Generation (RAG) system that enhan
 ## Frontend Preview
 ![image](https://github.com/user-attachments/assets/82f6cdba-507f-4fdf-a9dc-7dc165c112a8)
 
+## Changelog
+- 12/03/2025: Added support for multiple file types (PDF, CSV, Markdown etc.)
+
 
 ## Future Enhancements
 - Multi-user authentication & access control
