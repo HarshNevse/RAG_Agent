@@ -67,7 +67,8 @@ This project implements a Retrieval-Augmented Generation (RAG) system that enhan
 - **Retrieve Information**: The AI model will fetch and generate responses based on the documents.
 
 ## Frontend Preview
-![image](https://github.com/user-attachments/assets/82f6cdba-507f-4fdf-a9dc-7dc165c112a8)
+![9_](https://github.com/user-attachments/assets/788d2d64-c677-4996-9074-35cb717a914a)
+
 
 ## Changelog
 - 12/03/2025: Added support for multiple file types (PDF, CSV, Markdown etc.)
